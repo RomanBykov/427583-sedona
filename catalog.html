@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header>
+      <header class="main-header">
+        <nav class="main-nav">
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/200x100" width="200" height="100" alt="Логотип сервиса по бронированию отелей «Седона»">
+          </a>
+          <ul class="site-nav">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="media.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotel.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Фильтры поиска</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр отелей</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="waterpool" checked>Бассейн</li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">Wi-Fi</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>Гостиница</li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>Мотель</li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>Апартаменты</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <label for="pricecount">Стоимость в сутки(Р):</label>
+            от 0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> до 3000
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список предложений</h2>
+        <div class="search-result">
+          Найдено:
+          <output name="result">3</output>
+        </div>
+        <div class="sort">
+          <b>Сортировка:</b>
+          <ul class="sort-items">
+            <li class="sort-by-price"><a class="sort-items-link" href="#">по цене</a></li>
+            <li class="sort-by-type"><a class="sort-items-link" href="#">по типу</a></li>
+            <li class="sort-by-rating"><a class="sort-items-link" href="#">по рейтингу</a></li>
+          </ul>
+        </div>
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                Amara Resort & Spa
+              </a>
+            </h3>
+            <p>
+              <a href="catalog-item.html">
+                <img src="http://placehold.it/200x100" width="200" height="100" alt="Amara Resort & Spa foto">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>Гостиница</b>
+              <b>от 3500 Р.</b><br>
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+            <p class="catalog-item-rating">
+              <span class="icon-4stars"></span>
+              <b>Рейтинг: 8,5</b>
+            </p>
+          </li>
+
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                Desert Quail inn
+              </a>
+            </h3>
+            <p>
+              <a href="catalog-item.html">
+                <img src="http://placehold.it/200x100" width="200" height="100" alt="Desert Quail inn foto">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>Мотель</b>
+              <b>от 2000 Р.</b><br>
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+            <p class="catalog-item-rating">
+              <span class="icon-2stars"></span>
+              <b>Рейтинг: 8,9</b>
+            </p>
+          </li>
+
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                Villas at Poco Diablo
+              </a>
+            </h3>
+            <p>
+              <a href="catalog-item.html">
+                <img src="http://placehold.it/200x100" width="200" height="100" alt="Villas at Poco Diablo foto">
+              </a>
+             </p>
+             <p class="catalog-item-price">
+               <b>Апартаменты</b>
+               <b>от 4000 Р.</b><br>
+               <a class="button" href="#">Подробнее</a>
+               <a class="button" href="#">Забронировать</a>
+             </p>
+             <p class="catalog-item-rating">
+               <span class="icon-3stars"></span>
+               <b>Рейтинг: 9,2</b>
+             </p>
+          </li>
+
+        </ul>
+
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <b>#VISITSEDONA</b>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        Website by
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
