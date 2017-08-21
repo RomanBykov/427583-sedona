@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
-          <img src="img\logo.png" width="138" height="70" alt="Логотип сервиса по бронированию отелей «Седона»">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сервиса по бронированию отелей «Седона»">
         </a>
         <ul class="site-nav">
           <li><a href="info.html">Информация</a></li>
@@ -21,11 +22,9 @@
     </header>
 
     <main class="container">
-
       <h1 class="visually-hidden">Фильтры поиска</h1>
-
+	  
 	  <section class="filters">
-
 		<h2 class="visually-hidden">Фильтр отелей</h2>
 
 		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -33,35 +32,52 @@
 		  <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="waterpool" checked>Бассейн</li>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</li>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">Wi-Fi</li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-waterpool" type="checkbox" name="waterpool" checked>
+				<label for="filter-waterpool">Бассейн</label>
+			  </li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
+				<label for="filter-parking">Парковка</label>
+			  </li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-wifi" type="checkbox" name="wi-fi">
+				<label for="filter-wifi">Wi-Fi</label>
+			  </li>
             </ul>
           </fieldset>
 
 		  <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>Гостиница</li>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>Мотель</li>
-              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>Апартаменты</li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-hotel" type="checkbox" name="hotel" checked>
+			    <label for="filter-hotel">Гостиница</label>
+			  </li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-motel" type="checkbox" name="motel" checked>
+			    <label for="filter-motel">Мотель</label>
+			  </li>
+              <li class="filter-option">
+			    <input class="filter-input-checkbox" id="filter-apartments" type="checkbox" name="apartments" checked>
+			    <label for="filter-apartments">Апартаменты</label>
+			  </li>
             </ul>
           </fieldset>
 
 		  <fieldset>
-            <label for="pricecount">Стоимость в сутки(Р):</label>
-            от 0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="1"> до 3000
+            <label for="filter-price">Стоимость в сутки(Р):</label>
+            от 0 <input type="range" id="filter-price" name="price" min="0" max="3000" step="1"> до 3000
           </fieldset>
 
-		  <button type="submit" class="filter-button button">Показать</button>
+		  <button type="submit" class="filter-button">Показать</button>
         </form>
 
 	  </section>
 
 	  <section class="catalog">
-
 		<h2 class="visually-hidden">Список предложений</h2>
-
+		
 		<div class="search-result">
           Найдено:
           <output name="result">3</output>
@@ -69,7 +85,7 @@
         <div class="sort">
           <b>Сортировка:</b>
           <ul class="sort-items">
-            <li class="sort-by-price"><a class="sort-items-link" href="#">по цене</a></li>
+            <li class="sort-by-price"><a class="sort-items-link" href="#">по цене</a></li><!--Вот тут задумался: а не кнопка ли это? -->
             <li class="sort-by-type"><a class="sort-items-link" href="#">по типу</a></li>
             <li class="sort-by-rating"><a class="sort-items-link" href="#">по рейтингу</a></li>
           </ul>
@@ -84,7 +100,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-                <img src="img\hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa foto">
+                <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa foto">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -107,7 +123,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-                <img src="img\hotel-desert.jpg" width="135" height="90" alt="Desert Quail inn foto">
+                <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail inn foto">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -130,7 +146,7 @@
             </h3>
             <p>
               <a href="catalog-item.html">
-                <img src="img\hotel-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo foto">
+                <img src="img/hotel-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo foto">
               </a>
              </p>
              <p class="catalog-item-price">
@@ -164,5 +180,6 @@
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
+	
   </body>
 </html>
