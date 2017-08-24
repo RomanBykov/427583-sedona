@@ -1,26 +1,186 @@
-@font-face {
-	  font-family: "PTSans";
-	  src: url("fonts/pt-sans.ttf");
-}
+
 
 body {
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-family: "PTSans";
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+	
+	background-color: #ffffff;
 }
 
-.preview-header {
-  font-size: 21px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
+a {
+	text-decoration: none;
 }
 
-.feature-header-img {
-  font-size: 21px;
-  /*color: rgb(255, 255, 255);*/
-  font-weight: bold;
-  text-transform: uppercase;
+.main-nav {
+	font-size: /*дома в фш посмотреть*/;
+}
+
+.site-nav {
+	list-style: none;
+}
+
+.site-nav a {
+	color: #000000;
+	font-weight: bold;
+}
+
+.site-nav li:first-child,
+.site-nav li:nth-child(2) {
+	text-align: left;
+}
+
+.site-nav li:last-child,
+.site-nav li:nth-child(3) {
+	text-align: right;
+}
+
+.feature-list {
+	list-style: none;
+}
+
+.feature-item-header{
+	color: #ffffff;
+	
+	background-color: lightblue;
+}
+
+.feature-item-bottom {
+	background-color: #ebebeb;
+}
+
+.search-hotel{
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	
+	background-color: #996633;
+	
+	border: none;
+}
+
+.search-hotel:hover {
+	background-color: #66574d;
+}
+
+.search-hotel:focus {
+	color: #ebebeb;
+	
+	background-color: #544438; 
+}
+
+.appointment-form label {
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.appointment-form input {
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	
+	background-color: #ebebeb;
+	border: none;
+}
+
+.appointment-form input:hover {
+	background-color: lightgrey /*чуть темнее*/;
+}
+
+.appointment-form input:focus {
+	color: #000000;
+	
+	background-color: #ffffff;
+	
+	outline: none;
+	border: 2px solid #ebebeb;
+}
+
+.button {
+	width: /*задать по psd*/;
+	height: /*задать по psd*/;
+	
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 26px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	
+	background-color: #95c9fc;
+	
+	border: none;
+}
+
+.button:hover {
+	background-color: #6496d9;
+}
+
+.button:focus {
+	color: #ebebeb;
+	background-color: #407ca1;
+}
+
+.main-footer b {
+	text-align: center;
+	vertical-align: middle;
+	color: #000000;
+	font-weight: bold;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-copyright a {
+	text-align: center;
+	vertical-align: top;
+	color: #000000;
+	font-weight: bold;
+	
+	background-color: #ffffff;
+}
+
+.footer-copyright a:hover {
+	color: #ffffff;
+	
+	background-color: #95c9fc;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
