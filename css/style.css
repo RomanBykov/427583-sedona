@@ -3,8 +3,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	
-	font-family: "PT Sans";
+
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
@@ -12,16 +12,12 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	font-weight: normal;
-	
+
 	background-color: #ffffff;
 }
 
 a {
 	text-decoration: none;
-}
-
-.main-nav {
-	font-size: /*дома в фш посмотреть*/;
 }
 
 .site-nav {
@@ -33,124 +29,163 @@ a {
 	font-weight: bold;
 }
 
-.site-nav li:first-child,
-.site-nav li:nth-child(2) {
-	text-align: left;
+.site-nav li {
+	width: 239px;
+  height: 56px;
 }
 
-.site-nav li:last-child,
-.site-nav li:nth-child(3) {
-	text-align: right;
+.site-nav a:hover {
+	color: #81b3d2;
+}
+
+.site-nav a:active {
+	color: #dbdbdb;
+}
+
+.site-nav .current {
+	color: #766357;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .feature-list {
 	list-style: none;
 }
 
-.feature-item-header{
+.feature-item-header {
+	width: 400px;
+	height: 256px;
+
 	color: #ffffff;
-	
-	background-color: lightblue;
+	text-align: center;
+
+	background-color: #81b3d2;
+}
+
+.feature-item {
+	width: 400px;
+  height: 256px;
+
+	text-align: center;
+	vertical-align: middle;
 }
 
 .feature-item-bottom {
-	background-color: #ebebeb;
-}
-
-.search-hotel{
-	color: #ffffff;
-	font-family: "PT Sans";
-	font-size: 14px;
-	line-height: 26px;
+	background-color: #eeeeee;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.search-hotel-title {
+	width: 568px;
+	height: 86px;
+
+	color: #ffffff;
+	font-size: 21px;
 	font-weight: bold;
-	
-	background-color: #996633;
-	
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #766357;
+
 	border: none;
 }
 
-.search-hotel:hover {
-	background-color: #66574d;
+.search-hotel-title:hover {
+	background-color: #604e43;
 }
 
-.search-hotel:focus {
-	color: #ebebeb;
-	
-	background-color: #544438; 
+.search-hotel-title:focus {
+	color: #857871;
+
+	background-color: #503e33;
 }
 
 .appointment-form label {
-	font-family: "PT Sans";
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
-	font-weight: bold;
 }
 
-.appointment-form input {
-	font-family: "PT Sans";
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
+.modal-form {
+	display: inline-block;
+	width: 597px;
+  height: 424px;
+
+	text-align: center;
+}
+
+.appointment-form-date {
+	width: 346px;
+	height: 38px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.people-count {
+	width: 114px;
+	height: 38px;
+
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
-	font-weight: bold;
-	
-	background-color: #ebebeb;
+
+	background-color: #f2f2f2;
 	border: none;
 }
 
 .appointment-form input:hover {
-	background-color: lightgrey /*чуть темнее*/;
+	background-color: #ebebeb;
 }
 
 .appointment-form input:focus {
-	color: #000000;
-	
 	background-color: #ffffff;
-	
+
 	outline: none;
 	border: 2px solid #ebebeb;
 }
 
 .button {
-	width: /*задать по psd*/;
-	height: /*задать по psd*/;
-	
+	width: 458px;
+  height: 58px;
+
 	color: #ffffff;
-	font-family: "PT Sans";
-	font-size: 14px;
-	line-height: 26px;
-	color: #FFFFFF;
+	font-size: 21px;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
 	font-weight: bold;
-	
-	background-color: #95c9fc;
-	
+
+	background-color: #81b3d2;
+
 	border: none;
 }
 
 .button:hover {
-	background-color: #6496d9;
+	background-color: #669ec0;
 }
 
 .button:focus {
-	color: #ebebeb;
-	background-color: #407ca1;
+	color: #88b6d1;
+	background-color: #5496bd;
 }
 
 .main-footer b {
-	text-align: center;
-	vertical-align: middle;
+	font-size: 21px;
+	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 }
@@ -164,14 +199,19 @@ a {
 	vertical-align: top;
 	color: #000000;
 	font-weight: bold;
-	
+
 	background-color: #ffffff;
 }
 
 .footer-copyright a:hover {
 	color: #ffffff;
-	
-	background-color: #95c9fc;
+
+	background-color: #81b3d2;
+}
+
+.footer-copyright a:active {
+	color: #bdbbbc;
+	background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -180,7 +220,163 @@ a {
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	height: 1px !important;
+	width: 1px !important;
 	overflow: hidden;
+}
+
+.filter-section-name {
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+
+.filter {
+	border: none;
+}
+
+.filter-name {
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.filters {
+	background-image: url("img/filter-bg.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: #81b3d2;
+}
+
+.filters ul {
+	list-style: none;
+}
+
+.filter-button {
+	width: 133px;
+  height: 33px;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.filter-button:hover {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.filter-range {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.search-result {
+	font-size: 21px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.sort-items {
+	list-style: none;
+}
+
+.sort-items-link {
+	color: rgba(0, 0, 0, 0.302);
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-items-link:hover {
+	color: #81b3d2;
+}
+
+.sort-items-link:active {
+	color: #231f20;
+	border: none;
+}
+
+.sort-by-price a {
+	color: #81b3d2;
+	border: none;
+}
+
+.catalog-item a {
+	font-size: 21px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.catalog-item a:hover {
+	color: #81b3d2;
+}
+
+.catalog-item a:active {
+	color: #b2b2b2;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item-price .button {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #81b3d2;
+}
+
+.catalog-item-price .button:hover {
+	background-color: #669ec0;
+}
+
+.catalog-item-price .button:active {
+	color: #88b6d1;
+
+	background-color: #5496bd;
+}
+
+.catalog-item-price .button-book {
+	background-color: #766357;
+}
+
+.catalog-item-price .button-book:hover {
+	background-color: #604e43;
+}
+
+.catalog-item-price .button-book:active {
+	color: #857871;
+
+	background-color: #503e33;
+}
+
+.catalog-item-rating b {
+	display: inline-block;
+
+	width: 110px;
+  height: 27px;
+
+	font-size: 14px;
+	color: #666666;
+	font-weight: normal;
+
+	background-color: #f2f2f2;
 }
