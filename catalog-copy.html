@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+	  <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-copy.css">
+	  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li class="site-logo"><a class="main-header-logo" href="index.html"><img src="img/logo.png" width="138"
+            height="70" alt="Логотип сервиса по бронированию отелей «Седона»"></a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotel.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+		<main>
+		
+			<h1 class="visually-hidden">Фильтры поиска</h1>
+			
+			<section class="filter-section">
+				
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-waterpool" checked>
+							<label for="filter-waterpool">Бассейн</label>
+						</li>	
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-parking">
+				      <label for="filter-parking">Парковка</label>
+						</li>
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-wifi">
+				      <label for="filter-wifi">Wi-Fi</label>
+						</li>
+					</ul>				
+				</fieldset>
+				
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-hotel" checked>
+							<label for="filter-hotel">Гостиница</label>
+						</li>	
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-motel" checked>
+				      <label for="filter-motel">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" class="filter-checkbox" id="filter-apartments" checked>
+				      <label for="filter-wifi">Апартаменты</label>
+						</li>
+					</ul>				
+				</fieldset>
+				
+				<fieldset class="filter-range">
+					<div class="filter-range-wrapper">
+						<legend>Стоимость в сутки (Р):</legend>
+						<div class="price-controls">
+							<label for="range-min" class="min-price">от <input type="text" id="range-min" value="0" size="5"></label>
+							<label for="range-max" class="max-price">до <input type="text" id="range-max" value="3000"  size="5"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+					</div>
+					<button type="submit" class="filter-button">Показать</button>
+				</fieldset>
+					
+				
+
+        
+				
+			</section>
+		
+		</main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+          <p class="footer-hashtag">#VISITSEDONA</p>
+          <div class="footer-social">
+            <ul>
+              <li><a class="social-button button" href="#">Вконтакте</a></li>
+              <li><a class="social-button button" href="#">Фейсбук</a></li>
+              <li><a class="social-button button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <p class="footer-copyright">Website by<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a></p>
+        </div>
+    </footer>
+
+  </body>
+</html>
