@@ -83,7 +83,9 @@ a {
 }
 
 .features-header {
-  height: 174px;
+	margin: 0;
+	padding: 0;
+  height: 175px;
   padding-top: 40px;
   background-color: #ffffff;
 }
@@ -107,8 +109,12 @@ a {
 }
 
 .feature-list li {
-  padding: 20px 60px;
-  display: block;
+	margin: 0;
+	padding: 0;
+	padding-top: 40px;
+	max-width: 305px;
+	max-height: 145px;
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -117,15 +123,26 @@ a {
 }
 
 .feature-list-icons {
+	position: relative;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+	padding-top: 80px;
   margin-bottom: 76px;
   width: 1200px;
   height: 254px;
   background-color: #ffffff;
   color: #000000;
+}
+
+.icon-house::before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/icon-1.svg);
+	background-repeat: no-repeat;
 }
 
 .feature-list-icons li {

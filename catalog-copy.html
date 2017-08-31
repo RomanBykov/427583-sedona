@@ -23,18 +23,18 @@
     </header>
 
 		<main>
-		
+
 			<h1 class="visually-hidden">Фильтры поиска</h1>
-			
+
 			<section class="filter-section">
-				
+
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 					<ul>
 						<li>
 							<input type="checkbox" class="filter-checkbox" id="filter-waterpool" checked>
 							<label for="filter-waterpool">Бассейн</label>
-						</li>	
+						</li>
 						<li>
 							<input type="checkbox" class="filter-checkbox" id="filter-parking">
 				      <label for="filter-parking">Парковка</label>
@@ -43,27 +43,27 @@
 							<input type="checkbox" class="filter-checkbox" id="filter-wifi">
 				      <label for="filter-wifi">Wi-Fi</label>
 						</li>
-					</ul>				
+					</ul>
 				</fieldset>
-				
+
 				<fieldset>
 					<legend>Тип жилья:</legend>
 					<ul>
 						<li>
-							<input type="checkbox" class="filter-checkbox" id="filter-hotel" checked>
+							<input type="checkbox" class="filter-checkbox filter-right" id="filter-hotel" checked>
 							<label for="filter-hotel">Гостиница</label>
-						</li>	
+						</li>
 						<li>
-							<input type="checkbox" class="filter-checkbox" id="filter-motel" checked>
+							<input type="checkbox" class="filter-checkbox filter-right" id="filter-motel" checked>
 				      <label for="filter-motel">Мотель</label>
 						</li>
 						<li>
-							<input type="checkbox" class="filter-checkbox" id="filter-apartments" checked>
+							<input type="checkbox" class="filter-checkbox filter-right" id="filter-apartments" checked>
 				      <label for="filter-wifi">Апартаменты</label>
 						</li>
-					</ul>				
+					</ul>
 				</fieldset>
-				
+
 				<fieldset class="filter-range">
 					<div class="filter-range-wrapper">
 						<legend>Стоимость в сутки (Р):</legend>
@@ -81,13 +81,32 @@
 					</div>
 					<button type="submit" class="filter-button">Показать</button>
 				</fieldset>
-					
-				
 
-        
-				
 			</section>
-		
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список предложений</h2>
+
+        <div class="search-result-wrapper">
+          <h3>Найдено: 3</h3>
+
+          <ul class="search-result-filter">
+            <li><span>Сортировка:</span></li>
+            <li><a class="active-link" href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по рейтингу</a></li>
+          </ul>
+
+          <div class="search-filter-arrows">
+            <a class="arrow arrow-up" href="#"><span class="visually-hidden">по возрастанию</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#b1b1b1" d="M5.5 0L0 10h11z"/></svg></a>
+            <a class="arrow arrow-down" href="#"><span class="visually-hidden">по убыванию</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></a>
+          </div>
+        </div>
+
+      </section>
+
 		</main>
 
     <footer class="main-footer">

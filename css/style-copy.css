@@ -395,17 +395,17 @@ a {
 	margin: 0;
 	padding: 0;
 	width: 1200px;
-  height: 217px;
-	
+  height: 220px;
+
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
 	font-weight: normal;
-	
+
 	background-image: url("../img/filter-bg.jpg");
 	background-position: 50% 20%;
 	background-repeat: no-repeat;
@@ -413,10 +413,14 @@ a {
 }
 
 .filter-section legend {
+	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 40px;
 }
 
 .filter-section ul {
@@ -428,7 +432,7 @@ a {
 }
 
 .filter-section li {
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .filter-section fieldset {
@@ -440,14 +444,15 @@ a {
 	margin-bottom: auto;
 	margin-left: 55px;
 	margin-right: 20px;
-	
+
 	border: none;
 }
 
 .filter-section .filter-range {
+	margin-top: 10px;
 	width: 330px;
-	box-shadow: inset 0 0 0 1px red;
 	margin-left: auto;
+	margin-right: 70px;
 }
 
 .filter-range legend {
@@ -460,9 +465,9 @@ a {
 	position: relative;
 	height: 36px;
 	margin-bottom: 20px;
-	
+
 	font-size: 0;
-	
+
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 }
@@ -470,23 +475,23 @@ a {
 .price-controls::after {
 	content: "";
 	position: absolute;
-	
+
 	width: 2px;
 	height: 22px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	
+
 	background: #ffffff;
 }
 
 .price-controls label {
 	display: inline-block;
-	
+
 	font-size: 14px;
 	line-height: 38px;
 	vertical-align: top;
-	
+
 	cursor: pointer;
 }
 
@@ -499,10 +504,10 @@ a {
 .price-controls input {
 	width: 50px;
 	margin: 0;
-	
+
 	color: inherit;
 	font: inherit;
-	
+
 	background: none;
 	border: none;
 	outline: none;
@@ -510,7 +515,7 @@ a {
 
 .range-controls {
 	position: relative;
-	
+
 	margin-bottom: 32px;
 }
 
@@ -522,7 +527,7 @@ a {
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
-	
+
 	background: #ffffff;
 }
 
@@ -531,7 +536,7 @@ a {
 	top: -9px;
 	width: 4px;
 	height: 4px;
-	
+
 	background: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
@@ -556,7 +561,7 @@ a {
 	display: block;
 	margin: 0 auto;
 	padding: 6px 35px;
-	
+
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
@@ -573,4 +578,69 @@ a {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.search-result-wrapper {
+	display: flex;
+	align-items: baseline;
+}
+
+.search-result-filter {
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
+
+	list-style: none;
+}
+
+.search-result-filter  a {
+	margin-right: 45px;
+
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #b1b1b1;
+
+	color: rgba(0, 0, 0, 0.302);
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.search-result-filter a:hover,
+.search-result-filter a:active,
+.search-result-filter .active-link {
+	color: #81b3d2;
+	border: none;
+}
+
+.search-result-filter span {
+	margin-right: 45px;
+
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.search-result-wrapper h3 {
+	font-size: 21px;
+	line-height: 26px;
+	margin-right: 45px;
+	margin-left: 70px;
+}
+
+.arrow {
+  display: inline-block;
+}
+
+.search-filter-arrows {
+	margin-right: 70px
+}
+
+path:hover {
+	fill: #000000;
+}
+
+path:active {
+	fill: #81b3d2;
 }
