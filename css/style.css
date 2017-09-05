@@ -326,6 +326,17 @@ a {
 	background-color: #ffffff;
 }
 
+.map-container {
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	height: 475px;
+	
+	/*background: transparent;
+	box-shadow: inset 0 0 0 1px red;*/
+	
+}
+
 .appointment-wrapper div {
 	width: 440px;
 	height: 100px;
@@ -488,12 +499,49 @@ a {
 .modal-search {
   position: absolute;
   left: 356px;
-  top: 2170px;
+  top: 2169px;
   width: 566px;
-  height: 348px;
-  border: 1px solid transparent;
+  height: 394px;
+	margin: 0;
+	padding: 0;
   background-color: #ffffff;
   z-index: 4;
+	
+	font-weight: 600;
+}
+
+.modal-form-container {
+	position: relative;
+	display: inline-block;
+	width: 458px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 41px;
+	padding: 0;
+}
+
+
+.modal-search-block {
+	display: flex;
+	align-items: center;
+	height: 66px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.appointment-form input[type="text"] {
+	box-sizing: border-box;
+  width: 345px;
+	margin-left: auto;
+  padding: 5px 13px;
+  padding-right: 40px;
+	
+	font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+	border: none;
+	background-color: #f2f2f2;
 }
 
 .appointment-form input:hover {
@@ -502,60 +550,82 @@ a {
 
 .appointment-form input:focus {
 	background-color: #ffffff;
-
 	outline: none;
-	border: 2px solid #ebebeb;
+	box-shadow: inset 0 0 0 2px #ebebeb;
 }
 
-.appointment-form label {
+
+.calendar-button {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.calendar-button-in {
+	top: 22px;
+	right: 15px;
+}
+
+.calendar-button-out {
+	top: 88px;
+	right: 15px;
+}
+
+.calendar-button svg:hover {
+	fill: #000;
+}
+
+.calendar-button svg:active {
+	fill: #81b3d2;
+}
+
+.people-count-wrapper label {
+	margin-top: 1px;
+	margin-right: auto;
+}
+
+.people-count-wrapper .children-label{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.people-count-wrapper input[type="text"] {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	
+
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: middle;
-}
-
-.appointment-form {
-  display: flex;
-	width: 470px;
-	height: 290px;
-  margin: auto;
-  margin-top: 50px;
-
-	background-color: #ffffff;
-}
-
-.data-search-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.appointment-form-date {
-	width: 346px;
-	height: 38px;
-
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: left;
 	vertical-align: middle;
 
 	background-color: #f2f2f2;
 	border: none;
 }
 
-.people-count {
-	width: 114px;
+.people-count-wrapper .modal-btn {
+	width: 38px;
 	height: 38px;
-
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: middle;
-
-	background-color: #f2f2f2;
 	border: none;
+	background-color: #f2f2f2;
+	font-size: 20px;
+	font-weight: 600;
 }
+
+
 
 .button-submit-search {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 458px;
   height: 58px;
 
@@ -578,6 +648,135 @@ a {
 	color: #88b6d1;
 	background-color: #5496bd;
 }
+
+/*.appointment-form label {
+	display: inline-block;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	width: 100px;
+	height: 25px;
+	box-shadow: inset 0 0 0 1px red;
+}
+
+.appointment-form input {
+	display: inline-block;
+	position: relative;
+	box-shadow: inset 0 0 0 1px blue;
+}
+
+.appointment-form input:hover {
+	background-color: #ebebeb;
+}
+
+.appointment-form input:focus {
+	background-color: #ffffff;
+
+	outline: none;
+	box-shadow: inset 0 0 0 2px #ebebeb;
+}
+
+.appointment-form label {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+
+.appointment-form {
+  display: flex;
+	width: 470px;
+	height: 290px;
+  margin: auto;
+  margin-top: 50px;
+
+	background-color: #ffffff;
+	
+	
+}
+
+.data-search-wrapper {
+  display: flex;
+  flex-direction: column;
+	position: relative;
+}
+
+.appointment-form-date {
+	position: relative;
+	width: 306px;
+	height: 38px;
+	padding-left: 10px;
+	padding-right: 30px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.calendar-button {
+	position: absolute;
+	width: 21px;
+	height: 22px;
+	
+	
+	
+	border: none;
+	background: red;
+	outline: none;
+}
+
+.calendar-button svg {
+	position: absolute;
+	top: 10px;
+	right: 35px;
+}
+
+.calendar-button svg:hover {
+	fill: #000;
+}
+
+.calendar-button svg:active {
+	fill: #81b3d2;
+}
+
+
+.people-count {
+	width: 114px;
+	height: 38px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.plus {
+	position: absolute;
+	width: 21px;
+	height: 3px;
+	top: 0;
+	left: 0;
+	background: #bdbbbc;
+	border: none;
+}
+
+.minus {
+	position: absolute;
+	width: 21px;
+	height: 3px;
+	background: #bdbbbc;
+	border: none;
+}
+
+*/
 
 /*------------------------------catalog-page------------------------------------------*/
 
@@ -669,11 +868,11 @@ a {
 	line-height: 21px;
 }
 
-input[type="checkbox"] {
+.filter-container input[type="checkbox"] {
 	display: none;
 }
 
-input[type="checkbox"] + label {
+.filter-container input[type="checkbox"] + label {
 	font-size: 14px;
 	line-height: 21px;
 	color: #fff;
@@ -681,7 +880,7 @@ input[type="checkbox"] + label {
 	cursor: pointer;
 }
 
-input[type="checkbox"] + label::before {
+.filter-container input[type="checkbox"] + label::before {
 	display: inline-block;
 	content: "";
 	width: 27px;
@@ -694,7 +893,7 @@ input[type="checkbox"] + label::before {
 	background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-input:checked + label::before {
+.filter-container input:checked + label::before {
 	background: url("../img/checkbox-on.svg") no-repeat;
 }
 
@@ -1042,3 +1241,5 @@ input:checked + label::before {
 .two-stars::before {
 	width: 35px;
 }
+
+
