@@ -16,6 +16,7 @@ body {
 
 	background-color: #ffffff;
 	/*background-image: url("../img/sedona-index-1200.jpg");*/
+	background-image: url("../img/catalog-bg.jpg");
 }
 
 a {
@@ -38,9 +39,11 @@ a {
 .site-nav {
 	display: flex;
   justify-content: space-between;
+	flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 1200px;
+	min-height: 50px;
 
   list-style: none;
   background-color: #ffffff;
@@ -97,6 +100,7 @@ a {
 	width: 1200px;
 	height: 510px;
 	margin: 0;
+	margin-bottom: -1px;
 	padding: 0;
 
 	/*background-color: rgba(0, 0, 255, 0.2);*/
@@ -163,6 +167,8 @@ a {
 
 .feature-list li {
 	margin-top: 49px;
+	padding: 0 60px;
+	/*box-shadow: inset 0 0 0 1px blue;*/
 }
 
 .feature-list h3 {
@@ -213,8 +219,8 @@ a {
 	margin: 0 auto;
 	margin-top: 159px;
 	padding: 0;
-	width: 252px;
-  height: 81px;
+	width: 300px;
+  height: 90px;
 
 	font-size: 14px;
 	line-height: 20px;
@@ -294,6 +300,7 @@ a {
 .feature-list-bottom li {
 	width: 400px;
   height: 330px;
+	padding: 0 60px;
 }
 
 .feature-list-bottom h3 {
@@ -338,7 +345,7 @@ a {
 }
 
 .appointment-wrapper div {
-	width: 440px;
+	width: 490px;
 	height: 100px;
 	margin: 0 auto;
 	padding: 0;
@@ -378,6 +385,8 @@ a {
 
   background-color: #766357;
   border: none;
+	
+	cursor: pointer;
 }
 
 .button-show-search:hover {
@@ -393,7 +402,6 @@ a {
 	display: block;
 	margin: 0;
 	padding: 0;
-
 }
 
 /*-------------------------footer------------------------------------------------*/
@@ -500,12 +508,13 @@ a {
   position: absolute;
   left: 356px;
   top: 2169px;
-  width: 566px;
+  width: 568px;
   height: 394px;
 	margin: 0;
 	padding: 0;
   background-color: #ffffff;
   z-index: 4;
+	box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 	
 	font-weight: 600;
 }
@@ -548,21 +557,24 @@ a {
 	background-color: #ebebeb;
 }
 
-.appointment-form input:focus {
+.appointment-form input:focus, .appointment-form input:active {
 	background-color: #ffffff;
-	outline: none;
+
 	box-shadow: inset 0 0 0 2px #ebebeb;
 }
 
 
 .calendar-button {
 	position: absolute;
-	width: 22px;
+	width: 21px;
 	height: 22px;
-	
-	outline: none;
+	margin: 0;
+	padding: 0;
+	/*outline: none;*/
 	border: none;
 	background-color: transparent;
+		
+	cursor: pointer;
 }
 
 .calendar-button-in {
@@ -583,12 +595,16 @@ a {
 	fill: #81b3d2;
 }
 
+.people-count-wrapper {
+	margin-top: 2px;
+}
+
 .people-count-wrapper label {
 	margin-top: 1px;
 	margin-right: auto;
 }
 
-.people-count-wrapper .children-label{
+.people-count-wrapper .children-label {
 	margin-left: auto;
 	margin-right: auto;
 
@@ -611,13 +627,75 @@ a {
 	border: none;
 }
 
-.people-count-wrapper .modal-btn {
+.people-count-wrapper input[type="text"]:hover {
+	background: #ebebeb;
+}
+
+/*.people-count-wrapper input[type="text"]:active, 
+.people-count-wrapper input[type="text"]:focus {
+	background-color: #ffffff;
+	outline: none;
+	box-shadow: inset 0 0 0 2px #ebebeb;
+}*/
+
+.modal-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 38px;
 	height: 38px;
 	border: none;
 	background-color: #f2f2f2;
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 0px;
+	/*box-shadow: inset 0 0 0 1px red;*/
+	
+		
+	cursor: pointer;
+}
+
+.modal-btn:hover {
+	background: #ebebeb;
+}
+
+/*.modal-btn:active {
+	background-color: #ffffff;
+	outline: none;
+	box-shadow: inset 0 0 0 2px #ebebeb;
+}*/
+
+.modal-btn::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	
+	background: #bdbbbc;
+}
+
+.plus-btn::after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	
+	background: #bdbbbc;
+	transform: rotate(90deg);
+} 
+
+.modal-btn:hover::before,
+.plus-btn:hover::after  {
+  background: #000000;
+}
+
+.modal-btn:active::before,
+.plus-btn:active::after  {
+  background: #81b3d2;
 }
 
 
@@ -638,6 +716,9 @@ a {
 
 	background-color: #81b3d2;
 	border: none;
+	
+		
+	cursor: pointer;
 }
 
 .button-submit-search:hover {
@@ -649,141 +730,12 @@ a {
 	background-color: #5496bd;
 }
 
-/*.appointment-form label {
-	display: inline-block;
-	margin: 0;
-	margin-left: 10px;
-	padding: 0;
-	width: 100px;
-	height: 25px;
-	box-shadow: inset 0 0 0 1px red;
-}
-
-.appointment-form input {
-	display: inline-block;
-	position: relative;
-	box-shadow: inset 0 0 0 1px blue;
-}
-
-.appointment-form input:hover {
-	background-color: #ebebeb;
-}
-
-.appointment-form input:focus {
-	background-color: #ffffff;
-
-	outline: none;
-	box-shadow: inset 0 0 0 2px #ebebeb;
-}
-
-.appointment-form label {
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: middle;
-	
-}
-
-.appointment-form {
-  display: flex;
-	width: 470px;
-	height: 290px;
-  margin: auto;
-  margin-top: 50px;
-
-	background-color: #ffffff;
-	
-	
-}
-
-.data-search-wrapper {
-  display: flex;
-  flex-direction: column;
-	position: relative;
-}
-
-.appointment-form-date {
-	position: relative;
-	width: 306px;
-	height: 38px;
-	padding-left: 10px;
-	padding-right: 30px;
-
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: left;
-	vertical-align: middle;
-
-	background-color: #f2f2f2;
-	border: none;
-}
-
-.calendar-button {
-	position: absolute;
-	width: 21px;
-	height: 22px;
-	
-	
-	
-	border: none;
-	background: red;
-	outline: none;
-}
-
-.calendar-button svg {
-	position: absolute;
-	top: 10px;
-	right: 35px;
-}
-
-.calendar-button svg:hover {
-	fill: #000;
-}
-
-.calendar-button svg:active {
-	fill: #81b3d2;
-}
-
-
-.people-count {
-	width: 114px;
-	height: 38px;
-
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: middle;
-
-	background-color: #f2f2f2;
-	border: none;
-}
-
-.plus {
-	position: absolute;
-	width: 21px;
-	height: 3px;
-	top: 0;
-	left: 0;
-	background: #bdbbbc;
-	border: none;
-}
-
-.minus {
-	position: absolute;
-	width: 21px;
-	height: 3px;
-	background: #bdbbbc;
-	border: none;
-}
-
-*/
-
 /*------------------------------catalog-page------------------------------------------*/
-
 
 
 .filter-section {
 	display: flex;
+	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
 	width: 1200px;
@@ -794,9 +746,12 @@ a {
 	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	font-weight: normal;
+	
+	
+	/*box-shadow: inset 0 0 0 1px rgb(255, 255, 0);*/
 
 	background-image: url("../img/filter-bg.jpg");
 	background-position: 50% 20%;
@@ -807,63 +762,60 @@ a {
 .filter-section legend {
 	margin: 0;
 	padding: 0;
+	padding-top: 3px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 600;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	margin-left: 40px;
-}
-
-.filter-section ul {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: left;
-}
-
-.filter-section li {
-	margin-bottom: 25px;
 }
 
 .filter-section fieldset {
 	margin: 0;
 	padding: 0;
-	width: 150px;
-	height: 150px;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 55px;
-	margin-right: 20px;
+	width: auto;
+	height: auto;
+	margin-left: 61px;
+	margin-right: 40px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	padding-top: 13px;
 
+	
 	border: none;
 }
 
-.filter-hotel {
-	position: relative;
-	width: 160px;
-	height: 170px;
-	/*box-shadow: inset 0 0 0 1px green;*/
+.filter-section ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.filter-hotel-type {
-	position: absolute;
-	left: 30px;
-	width: 145px;
-	height: 130px;
-	/*box-shadow: inset 0 0 0 1px red;*/
+.filter-section li {
+	margin-top: 10px;
+	margin-bottom: 14px;
 }
+
+/*-----------------filter-range----------------------------------------*/
 
 .filter-section .filter-range {
-	margin-top: 30px;
 	width: 330px;
-	margin-left: auto;
-	margin-right: 70px;
+	margin: 0;
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: auto;
+	
+	color: #fff;
+	transform: uppercase;
+	/*background: rgba(0, 0, 255, 0.3);
+	box-shadow: inset 0 0 0 1px rgb(0, 0, 155);*/
+	
 }
 
-.filter-range legend {
-	margin-bottom: 9px;
+.filter-range legend {	
+	font-weight: 600;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -1016,25 +968,23 @@ a {
 	background-color: #ffffff;
 }
 
+/*-------------------------------search-result------------------------------------------*/
+
 .search-result-wrapper {
 	display: flex;
 	align-items: baseline;
+	padding: 5px 0;
+  padding-bottom:	9px;
+	
+	background: #fff;
 }
 
 .search-result-wrapper h3 {
-	font-size: 21px;
-	line-height: 26px;
 	margin-right: 45px;
 	margin-left: 70px;
-}
-
-.search-result-filter span {
-	margin-right: 45px;
-
-	font-size: 12px;
-	line-height: 18px;
-	color: #000000;
-	font-weight: 600;
+	
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .search-result-filter {
@@ -1046,13 +996,24 @@ a {
 	list-style: none;
 }
 
-.search-result-filter  a {
+.search-result-filter span {
 	margin-right: 45px;
+
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: 600;
+}
+
+
+.search-result-filter  a {
+	margin-right: 30px;
 
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.302);
+	
 	border-bottom: 1px dashed #81b3d2;
 }
 
@@ -1067,24 +1028,34 @@ a {
 .search-filter-arrows {
 	display: inline-block;
 	margin: 0;
+	margin-right: 73px;
 	padding: 0;
-	margin-right: 75px;
 }
 
-.search-filter-arrows .arrows:hover path {
+.arrows:first-child {
+	margin: 0;
+	margin-right: 9px;
+	padding: 0;
+}
+
+.arrows:hover path {
 	fill: #000000;
 }
 
-.search-filter-arrows .arrows:active path,
+.arrows:active path,
 .current-arrow path {
 	fill: #81b3d2;
 }
+
+/*---------------------------------------catalog-list---------------------------------------------*/
 
 .catalog-list-wrapper {
 	display: flex;
 	align-items: center;
 	width: 1200px;
 	height: 149px;
+	margin-left: 70px;
+	
 	border-top: 1px solid rgba(0, 0, 0, 0.302);
 }
 
@@ -1118,6 +1089,14 @@ a {
 	font-weight: 600;
 	text-align: left;
 	/*box-shadow: inset 0 0 0 1px red;*/
+}
+
+.info-wrapper h3:hover {
+	color: #81b3d2;
+}
+
+.info-wrapper h3:active {
+	color: rgba(0, 0, 0, 0.302);
 }
 
 .catalog-item-price-wrapper {
