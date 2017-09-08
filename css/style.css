@@ -14,9 +14,9 @@ body {
 	text-align: center;
 	vertical-align: middle;
 
-	background-color: #ffffff;
-	/*background-image: url("../img/sedona-index-1200.jpg");*/
-	background-image: url("../img/catalog-bg.jpg");
+	/*background-color: #ffffff;*/
+	background-image: url("../img/sedona-index-1200.jpg");
+	/*background-image: url("../img/catalog-bg.jpg");*/
 }
 
 a {
@@ -114,26 +114,25 @@ a {
 
 .features-header-wrapper {
 	display: block;
-	position: relative;
-	width: 1200px;
-	height: 213px;
+	/*position: relative;*/
+	/*width: 1200px;
+	height: 213px;*/
 	margin: 0;
 	padding: 0;
 
-	background-color: #fff/*rgba(0, 255, 0, 0.2)*/;
+	/*background-color: #fff/*rgba(0, 255, 0, 0.2)*/;
 	/*box-shadow: inset 0 0 0 1px green;*/
 }
 
 .features-header {
 	display: inline-block;
-	position: absolute;
-	width: 492px;
-  height: 100px;
 	margin: 0;
 	padding: 0;
-	top: 55px;
-	left: 355px;
-
+	padding-top: 60px;
+	padding-bottom: 38px;
+	padding-left: 300px;
+	padding-right: 300px;
+	
 	font-size: 14px;
 	line-height: 26px;
 
@@ -144,17 +143,14 @@ a {
 
 .features-header h2 {
 	margin: 0;
-	margin-top: 3px;
-	margin-bottom: 26px;
-	padding: 0;
+	margin-bottom: 25px;
+
 }
 
 .features-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-	width: 1200px;
-	height: 254px;
 	margin: 0;
 	padding: 0;
 
@@ -163,7 +159,6 @@ a {
 }
 
 .feature-list {
-	width: 400px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -173,83 +168,64 @@ a {
 }
 
 .feature-list li {
-	margin-top: 49px;
-	padding: 0 60px;
-	/*box-shadow: inset 0 0 0 1px blue;*/
+	padding-top: 29px;
+	padding-left:50px;
+	padding-right: 50px;
+	padding-bottom: 46px;
 }
 
 .feature-list h3 {
-	margin-top: 26px;
   font-size: 21px;
 	line-height: 21px;
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
 .feature-list p {
-	margin-top: 24px;
+	margin-top: 22px;
 	font-size: 14px;
 	line-height: 20px;
 }
 
 .devils-bridge p {
 	margin-top: 22px;
-
-	/*background-color: rgba(0, 0, 255, 0.2);*/
-	/*box-shadow: inset 0 0 0 1px blue;*/
 }
 
 .feature-list-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-	width: 1200px;
-  height: 333px;
   margin: 0;
   padding: 0;
 
-  background-color: #ffffff ;
+  background-color: #ffffff;
   color: #000000;
 	list-style: none;
-
-	/*box-shadow: inset 0 0 0 1px red;*/
 }
 
 .feature-list-block {
 	position: relative;
-	display: inline-block;
-	width: 400px;
-  height: 327px;
 	margin: 0;
 	padding: 0;
-	/*box-shadow: inset 0 0 0 1px green;*/
 }
 
 .feature-list-block div {
-	display: block;
-	margin: 0 auto;
-	margin-top: 159px;
-	padding: 0;
 	width: 300px;
-  height: 90px;
+	margin: 0;
+	padding: 0px 50px;
+	padding-top: 166px;
+	padding-bottom: 70px;
 
 	font-size: 14px;
 	line-height: 20px;
-	/*box-shadow: inset 0 0 0 1px blue;*/
-	/*color: rgba(255, 0, 0, 0.7);*/
-}
-
-.food-icon div {
-	width: 286px;
-}
-
-.souvenir-icon div {
-	width: 271px;
+	text-align: center;
 }
 
 .feature-list-block h3 {
 	display: inline-block;
 	margin: 0;
-	margin-bottom: 13px;
 	padding: 0;
+	margin-bottom: 13px;
 	font-size: 12px;
 	line-height: 15px;
 }
@@ -296,37 +272,40 @@ a {
   display: -ms-flexbox;
   display: flex;
 	width: 1200px;
-  height: 254px;
   margin: 0;
   padding: 0;
 
   background-color: #eeeeee;
   color: #000000;
 	list-style: none;
-
-	/*box-shadow: inset 0 0 0 1px red;*/
-	/*background: rgba(255, 0, 0, 0.5);*/
 }
 
 .feature-list-bottom li {
 	width: 400px;
-  height: 330px;
-	padding: 0 60px;
+	margin: 0;
+	padding: 0px;
 }
 
 .feature-list-bottom h3 {
 	display: inline-block;
 	margin: 0;
-	margin-top: 50px;
-	padding: 0;
+	padding: 0 120px;
+	padding-top:  45px ;
+	
 	font-size: 21px;
 	line-height: 22px;
 }
 
 .feature-list-bottom p {
-	margin-top: 19px;
+	margin: 0;
+	padding: 0 60px;
+	padding-top: 20px;
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.feature-list-bottom p:last-child {
+	padding-bottom: 60px;
 }
 
 .appointment-wrapper {
@@ -339,7 +318,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 	width: 1200px;
-  height: 295px;
   margin: 0;
   padding: 0;
 	text-align: center;
@@ -349,48 +327,38 @@ a {
 	background-color: #ffffff;
 }
 
-.map-container {
-	margin: 0;
-	padding: 0;
-	width: 1200px;
-	height: 475px;
-	
-	/*background: transparent;
-	box-shadow: inset 0 0 0 1px red;*/
-	
-}
-
 .appointment-wrapper div {
-	width: 490px;
-	height: 100px;
-	margin: 0 auto;
-	padding: 0;
-
-	/*box-shadow: inset 0 0 0 1px red;*/
+	margin: 0;
+	padding: 0px 300px;
+	padding-bottom: 130px;
 }
 
 .appointment-wrapper h2 {
-	display: inline-block;
-	margin-top: 54px;
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	margin-bottom: 23px;
+	
 	font-size: 30px;
 	line-height: 1.3em;
 }
 
 .appointment-wrapper p {
-	display: inline-block;
 	margin: 0;
-	margin-top: -5px;
 	padding: 0;
+	
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .button-show-search {
+	display: inline-block;
 	position: absolute;
-	display: block;
-  width: 568px;
-  height: 86px;
+	margin: 0;
+	padding: 30px 116px;
 
 	bottom: 0;
-	left: 316px;
+  left: 316px;
 
   color: #ffffff;
   font-size: 21px;
@@ -414,10 +382,11 @@ a {
 	background-color: #503e33;
 }
 
-.appointment img {
-	display: block;
+.map-container {
 	margin: 0;
 	padding: 0;
+	width: 1200px;
+	height: 475px;
 }
 
 /*-------------------------footer------------------------------------------------*/
@@ -541,7 +510,7 @@ a {
 .modal-search {
   position: absolute;
   left: 356px;
-  top: 2169px;
+  top: 2165px;
   width: 568px;
   height: 394px;
 	margin: 0;
@@ -695,8 +664,6 @@ a {
 	border: none;
 	background-color: #f2f2f2;
 	font-size: 0px;
-	/*box-shadow: inset 0 0 0 1px red;*/
-	
 		
 	cursor: pointer;
 }
@@ -748,8 +715,6 @@ a {
   background: #81b3d2;
 }
 
-
-
 .button-submit-search {
 	position: absolute;
 	bottom: 0;
@@ -767,7 +732,6 @@ a {
 	background-color: #81b3d2;
 	border: none;
 	
-		
 	cursor: pointer;
 }
 
