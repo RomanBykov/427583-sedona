@@ -441,14 +441,26 @@ a {
 
 .map-container {
 	position: relative;
+	width: 1200px;
+	height: 475px;
 	margin: 0;
 	padding: 0;
 
   z-index: 2;
 
   border: none;
-	background: url("../img/map.jpg");
 }
+
+.map-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+
+	background: #cbdda9;
+}
+
 
 /*-------------------------footer------------------------------------------------*/
 
@@ -616,7 +628,7 @@ a {
 .modal-search {
   position: absolute;
   left: 357px;
-  top: 2160px;
+  top: 2165px;
   width: 566px;
   height: 394px;
 	margin: 0;
@@ -625,7 +637,7 @@ a {
 	font-weight: 600;
 
 	background-color: #ffffff;
-  z-index: 0;
+  z-index: 3;
 	-webkit-box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 	        box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 
