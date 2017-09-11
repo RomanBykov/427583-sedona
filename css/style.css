@@ -126,7 +126,7 @@ a {
 	margin: 0;
 	margin-bottom: -1px;
 	padding: 0;
-	
+
 	background-color: #81b3d2;
 }
 
@@ -271,7 +271,7 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 13px;
-	
+
 	font-size: 12px;
 	line-height: 15px;
 	vertical-align: middle;
@@ -437,6 +437,7 @@ a {
 	padding: 0;
 	width: 1200px;
 	height: 475px;
+	background: url("../img/map.jpg");
 }
 
 /*-------------------------footer------------------------------------------------*/
@@ -558,25 +559,53 @@ a {
 /*--------------------------------------modal-form----------------------------------*/
 
 @keyframes bounce {
-  
-	100% {
-    transform: translateY(-2000px);
+  0% {
+    transform: translateY(-100px);
   }
 
-  0% {
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
 .modal-off {
 	display: none;
-	animation: bounce 0.6s;
 }
 
 .modal-search {
   position: absolute;
   left: 357px;
-  top: 2165px;
+  top: 2160px;
   width: 566px;
   height: 394px;
 	margin: 0;
@@ -587,6 +616,12 @@ a {
 	        box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 
 	font-weight: 600;
+
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-form-container {
@@ -597,7 +632,7 @@ a {
 	margin: 0 auto;
 	margin-top: 41px;
 	padding: 0;
-	
+
 	vertical-align: middle;
 }
 
@@ -653,8 +688,7 @@ a {
 	padding: 0;
 	border: none;
 	background-color: transparent;
-	
-	
+	outline: none;
 
 	cursor: pointer;
 }
@@ -679,8 +713,8 @@ a {
 
 .calendar-button svg:focus {
 	fill: #81b3d2;
-	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
+	/*outline: thin dotted;*/
+	/*outline: 5px auto -webkit-focus-ring-color;*/
 }
 
 .people-count-wrapper {
@@ -763,7 +797,7 @@ a {
 	height: 2px;
 	margin: 0;
 	padding: 0;
-	
+
 	vertical-align: middle;
 
 	background: #bdbbbc;
@@ -777,7 +811,7 @@ a {
 	height: 2px;
 	margin: 0;
 	padding: 0;
-	
+
 	vertical-align: middle;
 
 	background: #bdbbbc;
@@ -1147,7 +1181,7 @@ a {
 	margin: 0;
 	margin-right: 73px;
 	padding: 0;
-	
+
 	vertical-align: middle;
 
 	cursor: pointer;
