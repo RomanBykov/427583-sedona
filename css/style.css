@@ -21,6 +21,7 @@ body {
 	background-color: #ffffff;
 	/*background-image: url("../img/sedona-index-1200.jpg");*/
 	/*background-image: url("../img/catalog-bg.jpg");*/
+	z-index: 1;
 }
 
 a {
@@ -546,6 +547,16 @@ a {
 
 /*--------------------------------------modal-form----------------------------------*/
 
+@key-frames float-dawn {
+	to {
+		transform: translateY(0px, -2165px);
+	}
+}
+
+.modal-off {
+	display: none;
+}
+
 .modal-search {
   position: absolute;
   left: 357px;
@@ -555,11 +566,15 @@ a {
 	margin: 0;
 	padding: 0;
   background-color: #ffffff;
-  z-index: 4;
+  z-index: 0;
 	-webkit-box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 	        box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 
 	font-weight: 600;
+	
+	animation-name: float-dawn;
+	animation-direction: 1s;
+	animation-delay: 0.5s;
 }
 
 .modal-form-container {
@@ -592,7 +607,7 @@ a {
 	margin-left: auto;
   padding: 5px 13px;
   padding-right: 40px;
-
+	outline: none;
 	font-size: 14px;
 	line-height: 21px;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -622,9 +637,10 @@ a {
 	height: 22px;
 	margin: 0;
 	padding: 0;
-	outline: none;
 	border: none;
 	background-color: transparent;
+	
+	
 
 	cursor: pointer;
 }
@@ -645,6 +661,12 @@ a {
 
 .calendar-button svg:active {
 	fill: #81b3d2;
+}
+
+.calendar-button svg:focus {
+	fill: #81b3d2;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
 }
 
 .people-count-wrapper {
@@ -860,7 +882,9 @@ a {
 }
 
 .filter-container input[type="checkbox"] {
-	display: none;
+	/*display: none;*/
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
 }
 
 .filter-container input[type="checkbox"] + label {
@@ -886,6 +910,11 @@ a {
 
 .filter-container input:checked + label::before {
 	background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.filter-container input[type="checkbox"]:focus + label {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
 }
 
 /*-----------------filter-range----------------------------------------*/
@@ -1023,7 +1052,6 @@ a {
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
-	outline: none;
 	cursor: pointer;
 }
 
