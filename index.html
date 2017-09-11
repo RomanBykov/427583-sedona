@@ -117,7 +117,7 @@
         </div>
 
 				<div class="map-container">
-        <img src="img/map.jpg" width="1200" height="475" alt="Карта Седоны">
+					<img src="img/map.jpg" width="1200" height="475" alt="Карта Седоны">
 				</div>
 
       </section>
@@ -171,13 +171,13 @@
 
           <p class="modal-search-block people-count-wrapper">
             <label for="adults">Взрослые:</label>
-							<button type="button" class="modal-btn"><span class="visually-hidden">Больше на одну елиницу</span></button>
+							<button type="button" class="modal-btn" value="Меньше на 1"></button>
               <input type="text" class="appointment-form-date people-count" id="adults" value="2">
-							<button type="button" class="modal-btn plus-btn"><span class="visually-hidden">Меньше на одну елиницу</span></button>
+							<button type="button" class="modal-btn plus-btn" value="Больше на 1"></button>
             <label for="children" class="children-label">Дети:</label>
-							<button type="button" class="modal-btn"><span class="visually-hidden">Больше на одну елиницу</span></button>
+							<button type="button" class="modal-btn" value="Меньше на 1"></button>
 							<input type="text" class="appointment-form-date people-count" id="children" value="0">
-							<button type="button" class="modal-btn plus-btn"><span class="visually-hidden">Меньше на одну елиницу</span></button>
+							<button type="button" class="modal-btn plus-btn" value="Больше на 1"></button>
           </p>
 
           <button type="submit" class="button-submit-search button">Найти</button>
@@ -186,6 +186,19 @@
       </form>
 
     </section>
-
+		
+		<!--  этот блок я, конечно, перенесу в отдельный файл
+		<script>
+			var button = document.querySelector(".button-show-search");
+			var popup = document.querySelector(".modal-search");
+			
+			button.addEventListener("click", function(evt) {
+				evt.preventDefault();
+				if (popup.
+				popup.classList.add("modal-off");
+			});
+		</script>
+		-->
+		
   </body>
 </html>
