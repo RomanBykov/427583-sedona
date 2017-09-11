@@ -126,6 +126,8 @@ a {
 	margin: 0;
 	margin-bottom: -1px;
 	padding: 0;
+	
+	background-color: #81b3d2;
 }
 
 .features-header-wrapper {
@@ -145,6 +147,7 @@ a {
 
 	font-size: 14px;
 	line-height: 26px;
+	vertical-align: middle;
 
   background-color: #ffffff;
 }
@@ -163,6 +166,10 @@ a {
 	width: 1200px;
 	margin: 0;
 	padding: 0;
+}
+
+.features-wrapper img {
+	background: #FD7C6E;
 }
 
 .feature-list {
@@ -264,8 +271,10 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 13px;
+	
 	font-size: 12px;
 	line-height: 15px;
+	vertical-align: middle;
 }
 
 .house-icon::after {
@@ -333,6 +342,7 @@ a {
 
 	font-size: 21px;
 	line-height: 22px;
+	vertical-align: middle;
 }
 
 .feature-list-bottom p {
@@ -547,14 +557,20 @@ a {
 
 /*--------------------------------------modal-form----------------------------------*/
 
-@key-frames float-dawn {
-	to {
-		transform: translateY(0px, -2165px);
-	}
+@keyframes bounce {
+  
+	100% {
+    transform: translateY(-2000px);
+  }
+
+  0% {
+    transform: translateY(0);
+  }
 }
 
 .modal-off {
 	display: none;
+	animation: bounce 0.6s;
 }
 
 .modal-search {
@@ -571,10 +587,6 @@ a {
 	        box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 
 	font-weight: 600;
-	
-	animation-name: float-dawn;
-	animation-direction: 1s;
-	animation-delay: 0.5s;
 }
 
 .modal-form-container {
@@ -585,6 +597,8 @@ a {
 	margin: 0 auto;
 	margin-top: 41px;
 	padding: 0;
+	
+	vertical-align: middle;
 }
 
 
@@ -749,6 +763,8 @@ a {
 	height: 2px;
 	margin: 0;
 	padding: 0;
+	
+	vertical-align: middle;
 
 	background: #bdbbbc;
 }
@@ -761,6 +777,8 @@ a {
 	height: 2px;
 	margin: 0;
 	padding: 0;
+	
+	vertical-align: middle;
 
 	background: #bdbbbc;
 	-webkit-transform: rotate(90deg);
@@ -1129,6 +1147,8 @@ a {
 	margin: 0;
 	margin-right: 73px;
 	padding: 0;
+	
+	vertical-align: middle;
 
 	cursor: pointer;
 }
