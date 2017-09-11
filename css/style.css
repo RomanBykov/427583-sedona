@@ -1,7 +1,7 @@
 @font-face {
-font-family: "PT Sans"; /* имя шрифта для CSS правил */
-src: local("PT Sans"), /* проверка на наличие шрифта в ОС пользователя */
-url("fonts/ptsans.woff"); /* если шрифт не найден браузером, то загружаем его по указанному пути */
+font-family: "PT Sans";
+src: local("PT Sans"),
+url("fonts/ptsans.woff");
 }
 
 body {
@@ -19,8 +19,6 @@ body {
 	vertical-align: middle;
 
 	background-color: #ffffff;
-	/*background-image: url("../img/sedona-index-1200.jpg");*/
-	/*background-image: url("../img/catalog-bg.jpg");*/
 	z-index: 1;
 }
 
@@ -47,10 +45,10 @@ a {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	min-height: 50px;
   margin: 0;
   padding: 0;
   width: 1200px;
-	min-height: 50px;
 
   list-style: none;
   background-color: #ffffff;
@@ -107,7 +105,6 @@ a {
 
 .site-nav li {
 	width: 240px;
-
 	margin: 0;
 	padding: 0;
 	padding-top: 12px;
@@ -155,6 +152,7 @@ a {
 .features-header h2 {
 	margin: 0;
 	margin-bottom: 25px;
+
 	font-size: 21px;
 	line-height: 26px;
 }
@@ -173,13 +171,14 @@ a {
 }
 
 .feature-list {
-  list-style: none;
 	width: 400px;
   margin: 0;
   padding: 0;
 
+	color: #fff;
+	list-style: none;
+
   background-color: #81b3d2;
-  color: #fff;
 }
 
 .feature-list li {
@@ -190,15 +189,17 @@ a {
 }
 
 .feature-list h3 {
-  font-size: 21px;
-	line-height: 21px;
 	padding-left: 60px;
 	padding-right: 60px;
+
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .feature-list p {
 	position: relative;
 	margin-top: 23px;
+
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -208,10 +209,11 @@ a {
 	position: absolute;
 	top: 10px;
 	left: 126px;
-	margin: 0;
-	padding: 0;
 	width: 8px;
 	height: 1px;
+	margin: 0;
+	padding: 0;
+
 	background: #ffffff;
 }
 
@@ -220,10 +222,11 @@ a {
 	position: absolute;
 	top: 10px;
 	right: 126px;
-	margin: 0;
-	padding: 0;
 	width: 8px;
 	height: 1px;
+	margin: 0;
+	padding: 0;
+
 	background: #ffffff;
 }
 
@@ -243,9 +246,10 @@ a {
   margin: 0;
   padding: 0;
 
-  background-color: #ffffff;
   color: #000000;
 	list-style: none;
+
+	background-color: #ffffff;
 }
 
 .feature-list-block {
@@ -323,9 +327,10 @@ a {
   margin: 0;
   padding: 0;
 
-  background-color: #eeeeee;
   color: #000000;
 	list-style: none;
+
+  background-color: #eeeeee;
 }
 
 .feature-list-bottom li {
@@ -349,6 +354,7 @@ a {
 	margin: 0;
 	padding: 0 60px;
 	padding-top: 20px;
+
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -369,10 +375,11 @@ a {
 	width: 1200px;
   margin: 0;
   padding: 0;
+
 	text-align: center;
 	vertical-align: middle;
-
   color: #000000;
+
 	background-color: #ffffff;
 }
 
@@ -403,12 +410,11 @@ a {
 .button-show-search {
 	display: inline-block;
 	position: absolute;
-	margin: 0;
-	padding: 30px 116px;
-
 	bottom: 0;
   left: 50%;
 	transform: translateX(-50%);
+	margin: 0;
+	padding: 30px 116px;
 
   color: #ffffff;
   font-size: 21px;
@@ -429,6 +435,7 @@ a {
 
 .button-show-search:focus {
 	color: #857871;
+
 	background-color: #503e33;
 }
 
@@ -437,6 +444,7 @@ a {
 	padding: 0;
 	width: 1200px;
 	height: 475px;
+
 	background: url("../img/map.jpg");
 }
 
@@ -446,9 +454,8 @@ a {
 	height: 70px;
   margin: 0;
   padding: 24px 0;
-	background-color: #fff;
 
-	/*box-shadow: inset 0 0 0 1px red;*/
+	background-color: #fff;
 }
 
 .main-footer .container {
@@ -473,6 +480,7 @@ a {
 
 .footer-social {
 	width: 155px;
+
 	text-align: center;
 }
 
@@ -506,6 +514,7 @@ a {
 	        justify-content: center;
 	width: 46px;
 	height: 47px;
+
 	background-color: #81b3d2;
 	fill: #ffffff;
 }
@@ -610,12 +619,13 @@ a {
   height: 394px;
 	margin: 0;
 	padding: 0;
-  background-color: #ffffff;
+
+	font-weight: 600;
+
+	background-color: #ffffff;
   z-index: 0;
 	-webkit-box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
 	        box-shadow: 0 2px 15px 0 rgba(0, 1, 1, 0.3);
-
-	font-weight: 600;
 
 	animation: bounce 0.6s;
 }
@@ -656,6 +666,7 @@ a {
 	margin-left: auto;
   padding: 5px 13px;
   padding-right: 40px;
+
 	outline: none;
 	font-size: 14px;
 	line-height: 21px;
@@ -663,6 +674,7 @@ a {
 	font-weight: 600;
   color: #000000;
   text-transform: uppercase;
+
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -675,7 +687,6 @@ a {
 	background-color: #ffffff;
 
 	-webkit-box-shadow: inset 0 0 0 2px #ebebeb;
-
 	        box-shadow: inset 0 0 0 2px #ebebeb;
 }
 
@@ -686,6 +697,7 @@ a {
 	height: 22px;
 	margin: 0;
 	padding: 0;
+
 	border: none;
 	background-color: transparent;
 	outline: none;
@@ -729,7 +741,6 @@ a {
 .people-count-wrapper .children-label {
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 .people-count-wrapper input[type="text"] {
@@ -738,7 +749,6 @@ a {
 	height: 38px;
 	margin: 0;
 	padding: 0;
-
 
 	font-weight: bold;
 	text-transform: uppercase;
@@ -856,6 +866,7 @@ a {
 
 .button-submit-search:focus {
 	color: #88b6d1;
+
 	background-color: #5496bd;
 }
 
@@ -868,10 +879,10 @@ a {
 	-webkit-box-pack: start;
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
+	width: 1200px;
+	min-height: 220px;
 	margin: 0;
 	padding: 0;
-	width: 1200px;
-  min-height: 220px;
 
 	font-family: 'PT Sans', "Arial", sans-serif;
 	font-size: 14px;
@@ -900,7 +911,6 @@ a {
 }
 
 .filter-section fieldset {
-	margin: 0;
 	padding: 0;
 	margin-left: 60px;
 	margin-right: 50px;
@@ -925,6 +935,7 @@ a {
 	        align-items: flex-start;
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
 
@@ -955,6 +966,7 @@ a {
 	margin: 0;
 	margin-right: 10px;
 	padding: 0;
+
 	vertical-align: middle;
 
 	background: url("../img/checkbox-off.svg") no-repeat;
@@ -1004,11 +1016,10 @@ a {
 .price-controls::after {
 	content: "";
 	position: absolute;
-
-	width: 2px;
-	height: 22px;
 	top: 50%;
 	left: 50%;
+	width: 2px;
+	height: 22px;
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
@@ -1048,12 +1059,12 @@ a {
 
 .range-controls {
 	position: relative;
-
 	margin-bottom: 32px;
 }
 
 .range-controls .scale {
 	height: 2px;
+
 	background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1075,6 +1086,7 @@ a {
 	border-radius: 50%;
 	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
 	cursor: pointer;
 }
 
@@ -1089,7 +1101,6 @@ a {
 .range-toggle:hover {
 	background: #1c4f80;
 }
-
 
 .filter-button {
 	display: block;
@@ -1217,13 +1228,14 @@ a {
 	        align-items: center;
 	width: 1200px;
 	padding: 30px 0;
-	background-color: #fff;
 
+	background-color: #fff;
 	border-top: 1px solid rgba(0, 0, 0, 0.302);
 }
 
 .catalog-list-wrapper:last-child {
 	padding-bottom: 29px;
+
 	border-bottom: 1px solid rgba(0, 0, 0, 0.302);
 }
 
@@ -1320,6 +1332,7 @@ a {
 
 .catalog-btn:active {
 	color: #88b6d1;
+
 	background: #5496bd;
 }
 
@@ -1333,6 +1346,7 @@ a {
 
 .booking-btn:active {
 	color: #857871;
+
 	background: #503e33;
 }
 
@@ -1371,16 +1385,17 @@ a {
 
 .rating-wrapper span {
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 110px;
 	margin: 0;
 	padding: 2px 0;
-	bottom: 0;
-	left: 0;
-	vertical-align: middle;
 
+	vertical-align: middle;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #666666;
+
 	background: #f2f2f2;
 }
