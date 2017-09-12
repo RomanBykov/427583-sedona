@@ -714,7 +714,6 @@ a {
 
 	border: none;
 	background-color: transparent;
-	outline: none;
 
 	cursor: pointer;
 }
@@ -733,14 +732,16 @@ a {
 	fill: #000;
 }
 
-.calendar-button svg:active {
-	fill: #81b3d2;
-}
+
 
 .calendar-button svg:focus {
 	fill: #81b3d2;
-	/*outline: thin dotted;*/
-	/*outline: 5px auto -webkit-focus-ring-color;*/
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.calendar-button svg:active {
+	fill: #81b3d2;
 }
 
 .people-count-wrapper {
