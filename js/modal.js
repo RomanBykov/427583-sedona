@@ -10,23 +10,23 @@ var children = popup.querySelector("[name=children]");
 var storage = localStorage.getItem("date");
 
 popup.classList.add("modal-off");
+
 buttonModal.addEventListener("click", function(evt) {
-	
-	evt.preventDefault();
 	popup.classList.toggle("modal-off");
+	popup.classList.remove("modal-error");
 	date.focus();
 });
 
-popup.classList.add("modal-off");
 formModal.addEventListener("submit", function (evt) {
+	evt.preventDefault();
+	popup.classList.remove("modal-error");
 	if (!dateIn.value || !dateOut.value || !adults.value || !children.value) {
-		evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
+    popup.offsetWidth = popup.offsetWidth; 
 		popup.classList.add("modal-error");
 	} else {
 		localStorage.setItem("date", date.value);
 		localStorage.setItem("adults", adults.value);
 		localStorage.setItem("children", children.value);
+		this.submit();
 	}
 });
