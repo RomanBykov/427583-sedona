@@ -9,12 +9,15 @@ var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
 var storage = localStorage.getItem("date");
 
+popup.classList.add("modal-off");
 buttonModal.addEventListener("click", function(evt) {
+	
 	evt.preventDefault();
 	popup.classList.toggle("modal-off");
 	date.focus();
 });
 
+popup.classList.add("modal-off");
 formModal.addEventListener("submit", function (evt) {
 	if (!dateIn.value || !dateOut.value || !adults.value || !children.value) {
 		evt.preventDefault();
