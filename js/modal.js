@@ -12,6 +12,7 @@ var storage = localStorage.getItem("date");
 popup.classList.add("modal-off");
 
 buttonModal.addEventListener("click", function(evt) {
+	evt.preventDefault();
 	popup.classList.toggle("modal-off");
 	popup.classList.remove("modal-error");
 	date.focus();
@@ -21,7 +22,7 @@ formModal.addEventListener("submit", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-error");
 	if (!dateIn.value || !dateOut.value || !adults.value || !children.value) {
-    popup.offsetWidth = popup.offsetWidth; 
+    popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
 	} else {
 		localStorage.setItem("date", date.value);
