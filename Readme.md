@@ -1,4 +1,6 @@
-﻿# Личный проект «Седона»
+Смотрите на [github pages:](https://romanbykov.github.io/427583-sedona/)
+
+# Личный проект «Седона»
 
 * Студент: [Роман Быков](https://up.htmlacademy.ru/htmlcss/18/user/427583).
 * Наставник: [Роман Ганин](https://htmlacademy.ru/profile/id195773)
