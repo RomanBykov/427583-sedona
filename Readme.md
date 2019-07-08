@@ -1,4 +1,4 @@
-Смотрите на [github pages:](https://romanbykov.github.io/427583-sedona/)
+Смотрите на [github pages](https://romanbykov.github.io/427583-sedona/)
 
 # Личный проект «Седона»
 
